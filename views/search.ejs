@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <h1>Login</h1>
+        <input type="text" name="username" id="username">
+        <input type="password" name="password" id="password">
+        <button type="submit">Bejelentkezés</button>
+    </form>
+    <form>
+        <input type="text" name="keresett" id="keresett">
+        <button type="submit">Keresés</button>
+    </form>
+
+
+    <% if(talalatok.length ===0){ %>
+        Nincs találat
+    <% } else { %>
+        <% for (const t of talalatok) { %>
+            <p><%= t %></p>
+        <% } %>
+    <% } %>
+</body>
+</html>
