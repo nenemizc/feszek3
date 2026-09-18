@@ -47,4 +47,9 @@ export class AppController {
       ),
     };
   }
+  @Get('color')
+  @Render('color-picker')
+  getColorPicker() {
+    return {};
+  }
 }
